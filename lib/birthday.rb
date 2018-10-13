@@ -9,11 +9,10 @@ def happy_birthday(birthday_kids)
 end
 
 def select_winner(passengers)
-p "hello"
   passengers.each do |suite, name|
-    p suite
+
     if suite == :suite_a && name.start_with?("A")
-      p name
+    
       return name
     end
   end
